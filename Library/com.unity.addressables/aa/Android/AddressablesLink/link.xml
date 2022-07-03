@@ -1,0 +1,383 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="FadeEffect" preserve="all" />
+    <type fullname="FirebaseDataFetchSignal" preserve="all" />
+    <type fullname="Nukebox.Character.BossSkeletonController" preserve="all" />
+    <type fullname="Nukebox.Character.CalloutTickUi" preserve="all" />
+    <type fullname="Nukebox.Character.Customer" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerAnimationData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerAnimator" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerBoosterManager" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerBubbleVfxContoller" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerCoinUI" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerCoinVfxController" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerComboUi" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerContainer" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerDishUI" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerDishVfxController" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerEmotionChangeData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerLikeUi" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerLollipopVfxController" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerManager" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerOrderData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerOrderLayout" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerOrderPositionData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerSchedular" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerSpawnData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerSpecialPropertiesManager" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerTimer" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerTimerBarColorData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerTypeData" preserve="all" />
+    <type fullname="Nukebox.Character.CustomerUI" preserve="all" />
+    <type fullname="Nukebox.Character.DishDeliveryManager" preserve="all" />
+    <type fullname="Nukebox.Character.ForgetfulCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.ForgetfulCustomerBehaviour" preserve="all" />
+    <type fullname="Nukebox.Character.HotheadCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.ImpatientCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.IndecisiveCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.IndecisiveCustomerBehaviour" preserve="all" />
+    <type fullname="Nukebox.Character.KitchenCharacterController" preserve="all" />
+    <type fullname="Nukebox.Character.LoyalCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.RoyalCustomer" preserve="all" />
+    <type fullname="Nukebox.Character.SkeletonController" preserve="all" />
+    <type fullname="Nukebox.CurrencySystem.LevelEndCurrencyManager" preserve="all" />
+    <type fullname="Nukebox.FTS.BossCustomer" preserve="all" />
+    <type fullname="Nukebox.FTUE.FTUEAddToPlateLogic" preserve="all" />
+    <type fullname="Nukebox.FTUE.FTUEEntity" preserve="all" />
+    <type fullname="Nukebox.Games.CC.ApplianceSoundEntitiy" preserve="all" />
+    <type fullname="Nukebox.Games.CC.BGSoundPlaySignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.DisableOnAnimationEnd" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Firebase.RemoteConfig.VersionFirebaseData" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Narration.NarrationSkeletonController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.RestaurantDownloadProgressSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.RestaurantNotDownloadedSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Rewards.Tests.RewardUnitTest" preserve="all" />
+    <type fullname="Nukebox.Games.CC.SFXSoundPlaySignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Subscribers.SubsGameplayUI" preserve="all" />
+    <type fullname="Nukebox.Games.CC.TrailCollider" preserve="all" />
+    <type fullname="Nukebox.Games.CC.UISoundPlaySignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Versioning.Modals.ConfigDataAsset" preserve="all" />
+    <type fullname="Nukebox.Games.CC.Versioning.Signals.VersionUpdatedSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.AnimatingMilestoneSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.Signals.MiniMilestoneCompletionAnimationCompleteSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.Signals.WorldRestaurantDataLoadedSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.TryChangeWorldSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.Utilities.UI.RestauranScrollPaddingController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldLevelTemplateController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMapController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMapDataSO" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMapLoadingScreenSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMapRestaurantDataSO" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMiniMilestoneController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldRestaurantController" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldRestaurantDownloadButtonHandler" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldRestaurantSwitchSignal" preserve="all" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldSelectorButtonVisualController" preserve="all" />
+    <type fullname="Nukebox.IAP.BoosterStoreButton" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddedToDishLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddedToPreparationApplianceLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddressablePrefab" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddToDispenserMachineLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddToFoodItemTrayLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddToPreparationApplianceLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AddToStackedDishLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Appliance" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ApplianceProvider" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AppliancesVfxVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.AutoTransferPreparationCompleteLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Beverage" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.BeverageSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CakeBakingVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CapacityUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CookedIngredientFoodItemConfigListInfo" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CookedIngredientInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CookedIngredientPositionHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CookedIngredientVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.CroissantVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DazzlerCounterVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DeactivateLockLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DefaultPlateSelectionLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Dish" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DishAddedEntityTransformHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DishChargeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DishCreatorSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DishFoodItemConfigListInfo" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DishMakingAddToPlateLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachine" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachineEmptySlotFiller" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachineInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachineSuccessfulServeLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachineUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.DispenserMachineVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.EnableDisableOnMove" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.EntityPriceDataSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.EntityTagSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FillCustomersPatienceMeterManager" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FlyingAnimationData" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemChargeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemPrefabLoader" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemPrefabLoaderCallout" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemPrefabVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemServeInterface" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemToDishDataSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemTray" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemTrayInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.FrittatasPlate" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.GamePrefabInfoSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.GenericInteractiveEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.GriddleInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.GriddleLockLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Ingredient" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.IngredientListData" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.IngredientSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.InputMapDataSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.InteractionReceiver" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ItemUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.KitchenVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LevelScoreDataSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LoadingScreenDataSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LockableEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LockableEntityUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LockedUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MoveableEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MoveableVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleFoodItemAddToPlateLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleFoodItemOnPlateInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleIngredientFoodItemConfigListInfo" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleIngredientsCalloutVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleItemOnPlateKitchenVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultipleItemOnPlateSuccessfulServeLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.MultiplePreparationApplianceLightController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.OvenInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.OvenLockLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PattyVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlacedOnDishLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlacedOnGriddleVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlacedOnPlateVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlacedOnPreparationApplianceLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Plate" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlateAddedEntityTransformHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlateInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlatePlacedEntityTransformHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlateSelectorForAddingFoodItem" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PlateSuccessfulServeLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PrefabInstantiator" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PrefabLoader" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparableEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparableEntityTimer" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparableEntityUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparableEntityVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparationAppliance" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparationApplianceAddedEntityTransformHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparationApplianceMultiSlotFiller" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparationApplianceVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.PreparationLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveAllBurntItemsManager" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemovedFromDispenserMachineLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemovedFromGriddleVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveFromDispenserMachineLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveFromFoodItemTrayLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveFromIngredientPlateLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveFromPlateLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RemoveFromPreparationApplianceLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ResetBurnTimersManager" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RestaurantAddressableData" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.RestaurantData" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ScallopedPotatoPlate" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ScallopedPotatoVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.ScoreCategory" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SideDish" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SideDishSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Signals.LoadingScreenDataUpdatedSignalSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Signals.LoadingScreenEnableDisableSignalSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.Signals.PreparableEntitySignal" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SingleFoodItemAddToPlateLogic" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SingleIngredientFoodItemConfigListInfo" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SingleTapIngredientsInteractionLogicHandler" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SmartPlateSelection" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.SpriteUpgradeable" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.StackedDishSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.StackedDishVerificationLogicSO" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TaggedEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TapVisualController" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TimerClock" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TrashableEntity" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TrashCan" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.TrashCanVisualController" preserve="all" />
+    <type fullname="Nukebox.Player.LevelUpdatedSignal" preserve="all" />
+    <type fullname="Nukebox.Rewards.GenericRewardWidget" preserve="all" />
+    <type fullname="Nukebox.Rewards.SpecificRewardWidget" preserve="all" />
+    <type fullname="Nukebox.Rewards.VersionedRewardConntroller" preserve="all" />
+    <type fullname="Nukebox.StateMachine.StateMachineEventSignalSO" preserve="all" />
+    <type fullname="Nukebox.StateMachine.StateMachineEventSO" preserve="all" />
+    <type fullname="Nukebox.UI.CurrentWorldCurrencyTrail" preserve="all" />
+    <type fullname="Nukebox.UI.UIWidget" preserve="all" />
+    <type fullname="Nukebox.Utilities.AnimationCallbacks" preserve="all" />
+    <type fullname="Nukebox.Utilities.ScrollListSnap" preserve="all" />
+    <type fullname="ScaleEffect" preserve="all" />
+    <type fullname="ScrollSnap" preserve="all" />
+    <type fullname="UiParticles.UiParticles" preserve="all" />
+    <type fullname="Nukebox.KitchenEngine.LevelMainGoalResultData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.ScoreCategoryData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.EntityPriceData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerOrderPositionDetails" preserve="nothing" serialized="true" />
+    <type fullname="DeltaTimeMode" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Games.CC.WorldMap.MilestoneData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Games.CC.WorldMap.WorldMapData" preserve="nothing" serialized="true" />
+    <type fullname="TooltipSetup" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerTypeDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerTimerBarColorDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerEmotionChangeDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerAnimationDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerComboImageUi" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemComponents" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.SpriteUpgradeInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemSubset" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.FoodItemSuperset" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.DishCreationInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Character.CustomerSpawnDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.DishAddressableData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.PreparationApplianceUnit" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.PreparationStatusVisualData" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.DispenserUnitPrefab" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.VisualCollection" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Games.CC.WorldMap.RestaurantDetails" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.CapacityPrefabInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.IngredientPrefabInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.PrefabInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.PreparationStatusPrefabInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.TagPrefabInfo" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.KitchenEngine.UpgradePrefabInfo" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Nukebox.Rewards, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Nukebox.Rewards.Data.RewardGroupDataScriptableObject" preserve="all" />
+    <type fullname="Nukebox.Rewards.Data.RewardsDataScriptableObject" preserve="all" />
+    <type fullname="Nukebox.Rewards.Signals.RewardSignal" preserve="all" />
+    <type fullname="Nukebox.Rewards.Data.Reward" preserve="nothing" serialized="true" />
+    <type fullname="Nukebox.Rewards.Data.RewardGroup" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Nukebox.Signals, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Nukebox.Signals.Implementations.SimpleSignaler" preserve="all" />
+  </assembly>
+  <assembly fullname="spine-unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Spine.Unity.SkeletonAnimation" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataAsset" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonGraphic" preserve="all" />
+    <type fullname="Spine.Unity.SpineAtlasAsset" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonRenderer/SpriteMaskInteractionMaterials" preserve="nothing" serialized="true" />
+    <type fullname="Spine.Unity.BlendModeMaterials" preserve="nothing" serialized="true" />
+    <type fullname="Spine.Unity.MeshGenerator" preserve="nothing" serialized="true" />
+    <type fullname="Spine.Unity.MeshGenerator/Settings" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshPro" preserve="all" />
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animations.RotationConstraint" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`2[System.Single,System.Int32]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`2[UnityEngine.RectTransform,System.Int32]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemForceField" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.SpriteMask" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Shadow" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>
