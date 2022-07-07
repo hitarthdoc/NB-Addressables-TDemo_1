@@ -7,6 +7,7 @@ using Nukebox.Games.CC.Addressables;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.UI;
 
 namespace Platformer.Mechanics
 {
@@ -24,20 +25,33 @@ namespace Platformer.Mechanics
         [SerializeField]
         protected List<Vector3> tokenPositions = new List<Vector3>();
 
-        protected int startPos = 0;
-        protected int endpos = 30;
+        [SerializeField]
+        protected List<GameObject> spawnedTokens = new List<GameObject>();
+
+        [Header("Loading Progress")]
+        [SerializeField]
+        protected GameObject LoadingPanel;
+        [SerializeField]
+        protected Slider percentLoadingSlider;
+        [SerializeField]
+        protected Text percentLoadingText;
 
         protected void OnEnable()
         {
-            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
-            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
-            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
-            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
+            LoadingPanel.SetActive(true);
+
+            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnProgress, OnFailed);
+        }
+
+        protected void OnDisable()
+        {
+            tokenReference.ReleaseAsset();
         }
 
         private void OnFailed(Exception obj)
         {
             Debug.LogWarning($"Load Failed.... Exception already logged.");
+            LoadingPanel.SetActive(false);
         }
 
         private void OnSuccess(AssetReference obj)
@@ -46,6 +60,21 @@ namespace Platformer.Mechanics
                 && tokenReference.OperationHandle.Status == AsyncOperationStatus.Succeeded)
             {
                 SpawnTokens();
+            }
+            LoadingPanel.SetActive(false);
+        }
+
+        private void OnProgress(float percentComplete, float downloadProgress)
+        {
+            if (downloadProgress < 1)
+            {
+                percentLoadingText.text = $"Downloading... {downloadProgress * 100}";
+                percentLoadingSlider.value = downloadProgress;
+            }
+            else
+            {
+                percentLoadingText.text = $"Loading... {percentComplete * 100}";
+                percentLoadingSlider.value = percentComplete;
             }
         }
 
@@ -67,14 +96,9 @@ namespace Platformer.Mechanics
                 //We can release Asset ref here as well. if we know that we are NOT going  to need it again.
 
             }
-            int start = startPos;
-            int end = endpos;
-            startPos = endpos;
-            endpos = Mathf.Clamp ((endpos + (end - start)), start, tokenPositions.Count);
 
-            for (int index = start; index < end; index++)
+            foreach (Vector3 position in tokenPositions)
             {
-                Vector3 position = tokenPositions[index];
                 CountSpawnedInstances(tokenReference.InstantiateAsync(position, Quaternion.identity, tokenParent));
             }
         }
@@ -83,6 +107,16 @@ namespace Platformer.Mechanics
         {
             tokenReference.ReleaseInstance(instance.gameObject);
         }
+
+        //private async void CountSpawnedInstances(AsyncOperationHandle<GameObject> asyncOperationHandle)
+        //{
+        //    await asyncOperationHandle.Task;
+        //
+        //    spawnedTokens.Add(asyncOperationHandle.Result);
+        //
+        //    if (spawnedTokens.Count >= tokenPositions.Count)
+        //        tokenController.Initialize();
+        //}
 
         [ContextMenu("Populate Positions")]
         protected void PopulatePositions()

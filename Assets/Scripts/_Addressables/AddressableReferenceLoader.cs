@@ -11,18 +11,21 @@ namespace Nukebox.Games.CC.Addressables
     using UnityEngine.AddressableAssets;
     using UnityEngine.ResourceManagement;
     using UnityEngine.ResourceManagement.AsyncOperations;
+    using System.Threading.Tasks;
 
     public class AssetReferenceAndRequester
     {
         public AssetReference assetReference;
         public AsyncOperationHandle handle;
         public Action<AssetReference> onLoaded;
+        public Action<float, float> onProgress;
         public Action<Exception> onFail;
 
-        public AssetReferenceAndRequester(AssetReference assetReference, Action<AssetReference> onLoaded, Action<Exception> onFail)
+        public AssetReferenceAndRequester(AssetReference assetReference, Action<AssetReference> onLoaded, Action<float, float> onProgress, Action<Exception> onFail)
         {
             this.assetReference = assetReference;
             this.onLoaded = onLoaded;
+            this.onProgress = onProgress;
             this.onFail = onFail;
 
             this.handle = assetReference.LoadAssetAsync<object> ();
@@ -31,7 +34,14 @@ namespace Nukebox.Games.CC.Addressables
 
         protected async void HandleLoadTask ()
         {
-            await handle.Task;
+            while (!(handle.Task.IsCanceled || handle.Task.IsFaulted || handle.Task.IsCompleted) && !handle.IsDone)
+            {
+                if (handle.IsValid())
+                    onProgress?.Invoke(handle.PercentComplete, handle.GetDownloadStatus().Percent);
+
+                await Task.Delay(50);
+            }
+            //await handle.Task;
 
             if (handle.IsDone)
             {
@@ -63,7 +73,7 @@ namespace Nukebox.Games.CC.Addressables
 
         private object loadingCheckLock = new object();
 
-        public AsyncOperationHandle LoadAssetReference (AssetReference assetReference, Action <AssetReference> onSuccess, Action<Exception> onFailed)
+        public AsyncOperationHandle LoadAssetReference (AssetReference assetReference, Action <AssetReference> onSuccess, Action<float, float> onProgress, Action<Exception> onFailed)
         {
             lock (loadingCheckLock)
             {
@@ -78,7 +88,7 @@ namespace Nukebox.Games.CC.Addressables
                 }
             }
 
-            AssetReferenceAndRequester loadHandle = new AssetReferenceAndRequester(assetReference, onSuccess, onFailed);
+            AssetReferenceAndRequester loadHandle = new AssetReferenceAndRequester(assetReference, onSuccess, onProgress, onFailed);
             LoadingAssetReferences.Add(loadHandle);
 
             WaitTillAssetReferenceIsLoaded(loadHandle);
