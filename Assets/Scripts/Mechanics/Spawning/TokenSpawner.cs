@@ -24,11 +24,14 @@ namespace Platformer.Mechanics
         [SerializeField]
         protected List<Vector3> tokenPositions = new List<Vector3>();
 
-        [SerializeField]
-        protected List<GameObject> spawnedTokens = new List<GameObject>();
+        protected int startPos = 0;
+        protected int endpos = 30;
 
         protected void OnEnable()
         {
+            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
+            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
+            AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
             AddressableReferenceLoader.Instance.LoadAssetReference(tokenReference, OnSuccess, OnFailed);
         }
 
@@ -48,20 +51,37 @@ namespace Platformer.Mechanics
 
         private void SpawnTokens()
         {
-            foreach (var position in tokenPositions)
+            int count = 0;
+
+            async void CountSpawnedInstances(AsyncOperationHandle<GameObject> asyncOperationHandle)
             {
+                await asyncOperationHandle.Task;
+
+                GameObject token = asyncOperationHandle.Result;
+
+                token.GetComponent<TokenInstance>().Initialize(OnTokenDestroyed);
+
+                if (++count >= tokenPositions.Count)
+                    tokenController.Initialize();
+
+                //We can release Asset ref here as well. if we know that we are NOT going  to need it again.
+
+            }
+            int start = startPos;
+            int end = endpos;
+            startPos = endpos;
+            endpos = Mathf.Clamp ((endpos + (end - start)), start, tokenPositions.Count);
+
+            for (int index = start; index < end; index++)
+            {
+                Vector3 position = tokenPositions[index];
                 CountSpawnedInstances(tokenReference.InstantiateAsync(position, Quaternion.identity, tokenParent));
             }
         }
 
-        private async void CountSpawnedInstances(AsyncOperationHandle<GameObject> asyncOperationHandle)
+        private void OnTokenDestroyed(TokenInstance instance)
         {
-            await asyncOperationHandle.Task;
-
-            spawnedTokens.Add(asyncOperationHandle.Result);
-
-            if (spawnedTokens.Count >= tokenPositions.Count)
-                tokenController.Initialize();
+            tokenReference.ReleaseInstance(instance.gameObject);
         }
 
         [ContextMenu("Populate Positions")]
