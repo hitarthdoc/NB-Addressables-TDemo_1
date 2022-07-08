@@ -16,7 +16,17 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: df37f581530a34d288fd26d7826462ea
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: c36b0e54a8d8340759ab2f1394787f1f
+    m_Address: Assets/Character/Sprites/TokenSpin.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - token
+  - m_GUID: 6dbe86c90e83f46919bab16545351c29
+    m_Address: Assets/Prefabs/Token.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - token
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 462175016f3374be38ed87c556a3f76e, type: 2}
   m_SchemaSet:

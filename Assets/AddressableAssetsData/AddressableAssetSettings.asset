@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultGroup: c0ddc2df8def34fa58219716851d3132
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -31,9 +31,9 @@ MonoBehaviour:
   m_MonoScriptBundleNaming: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: dc53919792239493ab17ca83d6748a01
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: fc69b7e929a1a4234a58fdf494063bec
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: 
@@ -61,7 +61,7 @@ MonoBehaviour:
       - m_Id: dc53919792239493ab17ca83d6748a01
         m_Value: ServerData/[BuildTarget]
       - m_Id: fc69b7e929a1a4234a58fdf494063bec
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: https://spongebob-dev.s3.amazonaws.com/Sandbox/NB_Dev/CC-Test-Module/TestModule_1/ServerData/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: b7da74fbf4afe4a818800f82e634d748
       m_Name: BuildTarget
