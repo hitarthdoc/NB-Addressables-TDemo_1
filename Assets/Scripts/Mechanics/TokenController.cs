@@ -24,7 +24,7 @@ namespace Platformer.Mechanics
             tokens = UnityEngine.Object.FindObjectsOfType<TokenInstance>();
         }
 
-        void Awake()
+        internal void Initialize()
         {
             //if tokens are empty, find all instances.
             //if tokens are not empty, they've been added at editor time.

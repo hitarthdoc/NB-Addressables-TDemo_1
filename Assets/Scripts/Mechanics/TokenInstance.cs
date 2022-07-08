@@ -1,5 +1,7 @@
 using Platformer.Gameplay;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+
 using static Platformer.Core.Simulation;
 
 
@@ -30,12 +32,24 @@ namespace Platformer.Mechanics
         internal int frame = 0;
         internal bool collected = false;
 
+        protected System.Action<TokenInstance> onDestroyEvent;
+
         void Awake()
         {
             _renderer = GetComponent<SpriteRenderer>();
             if (randomAnimationStartTime)
                 frame = Random.Range(0, sprites.Length);
             sprites = idleAnimation;
+        }
+
+        public void Initialize (System.Action<TokenInstance> onDestroy)
+        {
+            onDestroyEvent += onDestroy;
+        }
+
+        protected void OnDisable()
+        {
+            Addressables.ReleaseInstance(this.gameObject);
         }
 
         void OnTriggerEnter2D(Collider2D other)
